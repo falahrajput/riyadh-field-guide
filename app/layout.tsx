@@ -5,9 +5,9 @@ import { GeistPixelSquare } from "geist/font/pixel";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://japan-field-guide.vercel.app"),
-  title: "Japan Field Guide \u2014 東京 '26",
-  description: "Personal Tokyo trip guide \u00b7 February 12\u201320, 2026",
+  metadataBase: new URL("https://riyadh-orcin.vercel.app"),
+  title: "Riyadh Field Guide",
+  description: "A personal guide to Riyadh, Saudi Arabia",
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",

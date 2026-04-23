@@ -14,7 +14,7 @@ interface MapContainerProps {
 
 const TILE_URL = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
 const TILE_ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>';
-const CENTER: L.LatLngExpression = [35.6762, 139.6503];
+const CENTER: L.LatLngExpression = [24.7136, 46.6753];
 
 function markerIcon(cat: Category, selected: boolean, pulse: boolean): L.DivIcon {
   const size = selected ? 12 : 8;

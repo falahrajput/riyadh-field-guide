@@ -8,21 +8,14 @@ interface CategoryFiltersProps {
   onChange: (f: FilterType) => void;
 }
 
-const jpPrefix: Record<Category, string> = {
-  base: "\u57fa",
-  culture: "\u6587",
-  food: "\u98df",
-  shopping: "\u8cb7",
-};
-
 const filters: { key: FilterType; label: string; color?: string }[] = [
   { key: "all", label: "All" },
   ...Object.entries(categoryConfig).map(([key, val]) => ({
     key: key as Category,
-    label: `${jpPrefix[key as Category]} ${val.label}`,
+    label: val.label,
   })),
-  { key: "daytrip", label: "\u65e5\u5e30\u308a", color: categoryConfig.culture.color },
-  { key: "neighborhood", label: "\u8fd1\u6240", color: categoryConfig.shopping.color },
+  { key: "daytrip", label: "Day Trip", color: categoryConfig.culture.color },
+  { key: "neighborhood", label: "District", color: categoryConfig.shopping.color },
 ];
 
 export function CategoryFilters({ active, onChange }: CategoryFiltersProps) {
