@@ -1,22 +1,14 @@
 "use client";
 import Link from "next/link";
 import { useStarred } from "@/lib/use-starred";
+import { SaudiFlag } from "@/components/saudi-flag";
 
 export default function Home() {
   const { count, mounted } = useStarred();
 
   return (
     <div className="relative min-h-screen flex flex-col bg-[#0C0C0C]">
-      {/* Video — fullscreen background */}
-      <video
-        src="/flag.mp4"
-        poster="/flag-poster.png"
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="fixed inset-0 w-full h-full object-cover z-0"
-      />
+      <SaudiFlag />
 
       {/* vertical watermark */}
       <div
