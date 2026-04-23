@@ -1,0 +1,15 @@
+export const nipponColors = {
+  ro: "#0C0C0C",
+  sumi: "#1C1C1C",
+  keshizumi: "#434343",
+  aisumicha: "#373C38",
+  sunezumi: "#787D7B",
+  ginnezumi: "#91989F",
+  shironezumi: "#BDC0BA",
+  shironeri: "#FCFAF2",
+  kurenai: "#CB1B45",
+  fuji: "#8B81C3",
+  kuchiba: "#E2943B",
+  wakatake: "#5DAC81",
+  yamabuki: "#FFB11B",
+} as const;
