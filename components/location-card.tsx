@@ -52,9 +52,6 @@ export function LocationCard({ location, starred, onToggleStar, onClose }: Locat
                 >
                   {location.name}
                 </h3>
-                {location.jp && (
-                  <span className="text-[13px] text-[var(--sunezumi)] font-mono">{location.jp}</span>
-                )}
               </div>
               <p className="text-[12px] text-[var(--sunezumi)] mt-0.5 ml-1.5">{location.sub}</p>
             </div>
